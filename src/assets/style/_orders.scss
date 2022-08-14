@@ -1,0 +1,92 @@
+.filters {
+  padding-top: 25px;
+  &__block {
+    &_first {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      &_title {
+        display: flex;
+        align-items: center;
+        p {
+          margin-left: 10px;
+          font-weight: 600;
+          font-size: 20px;
+          color: $black;
+        }
+      }
+      &_input {
+        width: 145px;
+        .text {
+          font-weight: 500;
+          font-size: 18px;
+          text-align: center;
+        }
+        .text-chevron {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          .fa-chevron-down {
+            font-size: 14px;
+          }
+        }
+        .i-text {
+          width: 145px;
+          height: 28px;
+          border: 1px solid $dark-grey;
+          border-radius: 20px;
+          padding-left: 10px;
+          outline: none;
+          &::placeholder {
+            font-size: 12px;
+            color: $placeholder;
+          }
+        }
+        .search {
+          background-color: $blue-hed;
+          color: $white;
+        }
+      }
+    }
+    &_second {
+      margin-top: 15px;
+      &_top {
+        background-color: $dark-grey;
+        padding: 10px 0;
+        &_status {
+          display: flex;
+          justify-content: space-around;
+          &_list {
+            color: $white;
+            font-weight: bold;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  &__list {
+    &_items {
+      display: flex;
+      justify-content: space-around;
+      border-bottom: 1px solid $dark-grey;
+      padding: 10px 0;
+      position: relative;
+      .item-plus {
+        position: absolute;
+        left: 20px;
+        color: $dark-grey;
+        width: 20px;
+        height: 19px;
+        border-radius: 50%;
+        border: 1px solid $dark-grey;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .item-data {
+        margin-left: -54px;
+      }
+    }
+  }
+}

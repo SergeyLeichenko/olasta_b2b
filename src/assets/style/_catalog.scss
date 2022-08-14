@@ -1,0 +1,80 @@
+.main {
+  padding-top: 20px;
+  &__block {
+    display: flex;
+    //catalog list
+    &_list {
+      .catalog {
+        width: 160px;
+        padding-top: 10px;
+        display: block;
+        position: absolute;
+        background-color: $white;
+        padding: 10px 10px;
+        z-index: 2;
+        margin-top: -20px;
+        &__list {
+          &_item {
+            cursor: pointer;
+            margin-bottom: 20px;
+            a {
+              font-weight: normal;
+              font-size: 18px;
+              color: $blue-hed;
+              text-transform: uppercase;
+              text-decoration: none;
+            }
+            &_types {
+              margin-left: 20px;
+              .product-types {
+                a {
+                  color: $black;
+                  font-size: 14px;
+                  text-transform: lowercase;
+                }
+              }
+            }
+            &_plus {
+              display: flex;
+              align-items: center;
+              .icon-plus {
+                font-size: 20px;
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+    &_card {
+      margin-left: 230px;
+      .new {
+        &__title {
+          font-weight: 600;
+          font-size: 36px;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+//paginations
+.card_btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  &_number {
+    .number-items {
+      display: flex;
+      align-items: center;
+      .pagination-button {
+        margin: 0 15px;
+        border: 1px solid $dark-grey;
+      }
+      .fa-chevron-left,
+      .fa-chevron-right {
+        color: $dark-grey;
+      }
+    }
+  }
+}
